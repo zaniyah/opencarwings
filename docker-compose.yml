@@ -41,9 +41,9 @@ services:
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
-	cap_drop:
+    cap_drop:
       - ALL
-	cap_add:
+    cap_add:
       - CHOWN
       - DAC_OVERRIDE
       - FOWNER
